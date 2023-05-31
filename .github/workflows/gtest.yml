@@ -1,0 +1,23 @@
+name: gtest
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu:20.04
+    strategy:
+      fail-fast: false
+    steps:
+    - uses: actions/checkout@v3
+    - name: gtest environment
+      run: |
+        apt-get install libgtest-dev
+        cd /usr/src/gtest
+        mkdir build
+        sudo cmake ..
+        sudo make
+    - name: Test with unittest 
+      run: |
+        
+        
+    - name: Test Coverage 
+      run: |
