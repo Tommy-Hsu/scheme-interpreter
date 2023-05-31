@@ -13,8 +13,8 @@ jobs:
         sudo apt-get install libgtest-dev
         sudo apt install cmake
         cd /usr/src/gtest
-        pwd
         sudo mkdir build
+        cd build
         sudo cmake ..
         sudo make
         ls -al
