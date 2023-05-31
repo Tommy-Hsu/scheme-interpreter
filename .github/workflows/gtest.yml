@@ -18,10 +18,11 @@ jobs:
         sudo cmake ..
         sudo make
         sudo cp ./lib/libgtest*.a /usr/local/lib
-        cd
-        ls -al
-        ls ./runners/
-        ls ./work/
+        cd ./work/scheme-interpreter/
+        . ./setup.sh
+        make
+        make test
+        ./testpl.out
     - name: Test with unittest 
       run: |
         
