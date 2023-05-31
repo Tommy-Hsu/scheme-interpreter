@@ -11,8 +11,9 @@ jobs:
     - name: gtest environment
       run: |
         sudo apt-get install libgtest-dev
+        sudo apt install cmake
         cd /usr/src/gtest
-        mkdir build
+        sudo mkdir build
         sudo cmake ..
         sudo make
     - name: Test with unittest 
