@@ -19,7 +19,7 @@ jobs:
         sudo make
         sudo cp ./lib/libgtest*.a /usr/local/lib
         cd
-        cd ./work/scheme-interpreter/
+        cd ./work/scheme-interpreter/scheme-interpreter
         ls -al
         . ./setup.sh
         make
