@@ -20,6 +20,8 @@ jobs:
         sudo cp ./lib/libgtest*.a /usr/local/lib
         cd
         ls -al
+        ls ./runners/
+        ls ./work/
     - name: Test with unittest 
       run: |
         
