@@ -17,6 +17,7 @@ jobs:
         cd build
         sudo cmake ..
         sudo make
+        cd lib
         ls -al
         sudo cp /lib/libgtest*.a /usr/local/lib
         cd
