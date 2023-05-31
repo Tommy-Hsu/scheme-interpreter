@@ -23,11 +23,11 @@ jobs:
         ls -al
         . ./setup.sh
         make
-        make test
-        ./testpl.out
+        
     - name: Test with unittest 
       run: |
-        
+        make test
+        ./testpl.out
         
     - name: Test Coverage 
       run: |
