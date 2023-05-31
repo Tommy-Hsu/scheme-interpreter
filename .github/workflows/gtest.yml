@@ -12,6 +12,7 @@ jobs:
       run: |
         sudo apt-get install libgtest-dev
         sudo apt install cmake
+        sudo apt-get install lcov
         cd /usr/src/gtest
         sudo mkdir build
         cd build
@@ -31,3 +32,4 @@ jobs:
         
     - name: Test Coverage 
       run: |
+        . ./coverage.sh
